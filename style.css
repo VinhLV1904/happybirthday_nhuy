@@ -243,7 +243,9 @@ span {
   -o-animation: balloon1 6s ease-in-out infinite;
   animation: balloon1 6s ease-in-out infinite;
 }
-
+.swal-modal {
+  width: 800px;
+}
 .avatar__title {
   font-size: 90px;
   cursor: pointer;
