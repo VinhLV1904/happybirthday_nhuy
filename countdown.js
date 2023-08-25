@@ -8,7 +8,7 @@ function updateCountdown() {
 
   if (countdown === 0) {
     // Chuyển hướng đến trang web chính
-    window.location.href = "index3.html";
+    window.location.href = "index.html";
   } else {
     countdown--;
     setTimeout(updateCountdown, 1000); // Đợi 1 giây trước khi cập nhật lại thời gian
