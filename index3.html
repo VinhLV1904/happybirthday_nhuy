@@ -17,6 +17,7 @@
         <!-- 1. Đây là phần title của website -->
         <title>Happy Birthday</title>
         <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./phaohoa.css">
         <script>
             window.open = function () {};
             window.print = function () {};
@@ -38,7 +39,13 @@
             rel="stylesheet"
             type="text/css"
         />
-        <div class="container">
+        <div class="container-fluid">
+
+            <div class="pyro">
+                <div class="before"></div>
+                <div class="after"></div>
+            </div>
+           
             <!-- 2. Dòng chữ Happy Birthday
             Nếu bạn muốn thêm chữ vào thì phải thay đổi css tương ứng cho nó -->
             <div class="balloon">
@@ -62,11 +69,11 @@
                 <!-- 4. Tên của người đó -->
                 <h1 onclick="showMessage()" class="avatar__title">Như Ý</h1>
             </div>
-            
             <!-- 5. Phần nhạc -->
             <audio controls id="player" autoplay loop>
                 <source src="./music.mp3" type="audio/mp3">
             </audio>
+            <canvas id="canvas"></canvas>
         </div>
         <script>
             if (document.location.search.match(/type=embed/gi)) {
@@ -84,5 +91,6 @@
             }
         </script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="js.js"></script>
     </body>
 </html>
