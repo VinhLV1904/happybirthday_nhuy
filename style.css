@@ -242,6 +242,7 @@ span {
 .avatar__img {
   width: 400px;
   height: 400px;
+  margin-top: 80px;
   border-radius: 50%;
   border: 5px solid rgba(234, 15, 150, 0.9);
   box-shadow: inset 10px 10px 10px rgba(15, 219, 234, 0.9);
@@ -483,4 +484,30 @@ h1 {
 
 .auto-zoom-image {
   animation: autoZoom 3s infinite; /* Chạy animation vô hạn trong 5 giây */
+}
+h5.text-center {
+  text-align: center;
+  color: white;
+  font-size: 27px;
+}
+.scrolling-text-container {
+  overflow: hidden;
+  height: 100px;
+  position: relative;
+}
+
+.scrolling-text {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  animation: scrollAnimation 5s linear infinite alternate; /* Animation chạy liên tục lên xuống */
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%); /* Di chuyển lên trên 100% chiều cao */
+  }
 }

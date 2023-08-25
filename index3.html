@@ -63,9 +63,13 @@
                 <div><span>A</span></div>
                 <div><span>Y</span></div>
             </div>
+
             <div class="avatar">
+                            <div class=".scrolling-text-container">
+                                <h5 class="text-center scrolling-text">Nhấn </br> vào</h5>
+                            </div>
                 <!-- 3. Avatar của người bạn muốn gởi lời chúc -->
-                <img src="./image.jpg" alt="" class="avatar__img auto-zoom-image" onclick="showMessage()" />
+                <img src="./nhuy.jpg" alt="" class="avatar__img auto-zoom-image" onclick="showMessage()" />
                 <!-- 4. Tên của người đó -->
                 <h1 onclick="showMessage()" class="avatar__title">Như Ý</h1>
             </div>
@@ -83,11 +87,13 @@
                 // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
                 swal({
                     title: "Lời Chúc", // Tiêu đề của popup
-                    text: "Chúc em tuổi mới đong đây, bao nhiêu hạnh phúc đều là của em. Chúc em trong túi nhiều tiền, trong tim có nắng trong lòng bình yên. ",
+                    text: "Happy Birthday! Chúc mừng sinh nhật Như Ý, chào mừng em đến với tuổi 17. Chúc em tuổi mới đong đây, bao nhiêu hạnh phúc đều là của em. Chúc em trong túi nhiều tiền, trong tim có nắng trong lòng bình yên. Happy Birthday! ",
                     button: {
                         text: "❤️️",
                     },
                 });
+                var audio = document.getElementById("player");
+                audio.play();
             }
         </script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
