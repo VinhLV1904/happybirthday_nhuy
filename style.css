@@ -468,3 +468,19 @@ h1 {
     opacity: 1;
   }
 }
+
+@keyframes autoZoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2); /* Phóng to ở giữa hiệu ứng */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.auto-zoom-image {
+  animation: autoZoom 3s infinite; /* Chạy animation vô hạn trong 5 giây */
+}
